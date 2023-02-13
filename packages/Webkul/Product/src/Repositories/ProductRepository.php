@@ -446,7 +446,7 @@ class ProductRepository extends Repository
      */
     public function getPerPageLimit($params)
     {
-        $limit = $params['limit'] ?? 9;
+        $limit = $params['limit'] ?? 12;
 
         if ($productsPerPage = core()->getConfigData('catalog.products.storefront.products_per_page')) {
             $pages = explode(',', $productsPerPage);
